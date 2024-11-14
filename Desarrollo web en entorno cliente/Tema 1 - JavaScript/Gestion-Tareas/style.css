@@ -1,0 +1,106 @@
+/* Reseteo de los márgenes y padding, y aplicación de box-sizing para que el padding y borde se incluyan en el ancho total de los elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Fuente base */
+    background-color: #f4f4f9; /* Color de fondo claro */
+    display: flex; /* Centrado del contenido */
+    justify-content: center; /* Centrado horizontal del contenido */
+    padding: 20px; /* Espaciado alrededor del contenido */
+}
+
+/* Contenedor principal con un ancho ajustado */
+.container {
+    width: 80%; /* Ancho relativo al tamaño de la pantalla */
+    max-width: 1000px; /* Ancho máximo para pantallas grandes */
+}
+
+/* Estilo para el encabezado principal */
+h1 {
+    text-align: center; /* Centrado del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Espaciado inferior entre las secciones */
+section {
+    margin-bottom: 30px;
+}
+
+/* Estilos generales para las secciones de formulario, lista y tarjetas */
+#form-section, #task-list-section, #task-cards-section {
+    padding: 20px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilos de los elementos del formulario: campos de entrada, área de texto, selector y botón */
+form input, form textarea, form select, form button {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    margin: 5px 0; /* Espaciado entre los elementos */
+    padding: 8px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo específico para el botón de enviar en el formulario */
+form button {
+    background-color: #007BFF; /* Color de fondo azul */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde adicional */
+}
+
+/* Eliminación de viñetas en la lista de tareas */
+#task-list {
+    list-style-type: none;
+}
+
+/* Estilo para cada tarea en la lista de tareas */
+.task-item {
+    display: flex; /* Diseño flexible para distribuir el contenido */
+    justify-content: space-between; /* Distribuye el contenido en extremos */
+    padding: 10px; /* Espaciado interno */
+    border-bottom: 1px solid #eee; /* Línea divisoria inferior */
+}
+
+/* Diseño en cuadrícula para las tarjetas de tareas */
+#task-cards {
+    display: grid; /* Disposición en cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas adaptables según el ancho disponible */
+    gap: 10px; /* Espaciado entre las tarjetas */
+}
+
+/* Estilo de cada tarjeta de tarea */
+.card {
+    border: 1px solid #ccc; /* Borde gris claro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    text-align: center; /* Centrado del contenido */
+}
+
+/* Imagen en la tarjeta, con tamaño máximo y margen */
+.card img {
+    max-width: 50px; /* Tamaño máximo de la imagen */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo para el botón en cada tarjeta */
+.card button {
+    background-color: #28a745; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    border: none; /* Sin borde adicional */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilo específico para las imágenes de prioridad */
+.priority-image {
+    max-width: 50px; /* Tamaño máximo de la imagen */
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
