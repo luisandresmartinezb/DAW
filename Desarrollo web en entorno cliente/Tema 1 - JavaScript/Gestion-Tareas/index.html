@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de la codificación de caracteres para el documento -->
+    <meta charset="UTF-8">
+    <!-- Ajuste de la visualización en dispositivos móviles, asegurando que el diseño se adapte al ancho de la pantalla -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que se mostrará en la pestaña del navegador -->
+    <title>Gestión de Tareas</title>
+    <!-- Enlace al archivo CSS para aplicar estilos al contenido de la página -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal que agrupa todo el contenido de la página -->
+    <div class="container">
+        <!-- Encabezado principal de la página -->
+        <h1>Gestión de Tareas</h1>
+
+        <!-- Sección del formulario para agregar nuevas tareas -->
+        <section id="form-section">
+            <!-- Subtítulo para la sección de agregar tareas -->
+            <h2>Agregar Tarea</h2>
+            <!-- Formulario para capturar los detalles de la nueva tarea -->
+            <form id="task-form">
+                <!-- Campo de texto para ingresar el nombre de la tarea -->
+                <input type="text" id="task-title" placeholder="Nombre de la tarea" required>
+                <!-- Área de texto para ingresar la descripción de la tarea -->
+                <textarea id="task-desc" placeholder="Descripción de la tarea" required></textarea>
+                <!-- Campo de selección de fecha para definir la fecha de la tarea -->
+                <input type="date" id="task-date" required>
+                <!-- Checkbox para marcar la tarea como prioritaria -->
+                <label><input type="checkbox" id="task-important"> Prioritaria</label>
+                <!-- Menú desplegable para seleccionar el nivel de prioridad de la tarea -->
+                <select id="task-priority" required>
+                    <option value="baja">Baja</option>
+                    <option value="media">Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <!-- Botón para enviar el formulario y agregar la tarea -->
+                <button type="submit">Agregar Tarea</button>
+            </form>
+        </section>
+
+        <!-- Sección para mostrar la lista de tareas -->
+        <section id="task-list-section">
+            <!-- Subtítulo para la sección de lista de tareas -->
+            <h2>Lista de Tareas</h2>
+            <!-- Menú desplegable para filtrar las tareas por prioridad -->
+            <select id="priority-filter">
+                <option value="todas">Todas</option>
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+            <!-- Lista no ordenada donde se mostrarán las tareas en forma de lista -->
+            <ul id="task-list"></ul>
+        </section>
+
+        <!-- Sección para mostrar las tareas en formato de tarjetas -->
+        <section id="task-cards-section">
+            <!-- Subtítulo para la sección de tarjetas de tareas -->
+            <h2>Cartas de Tareas</h2>
+            <!-- Contenedor donde se agregarán las tarjetas de cada tarea -->
+            <div id="task-cards"></div>
+        </section>
+    </div>
+
+    <!-- Enlace al archivo JavaScript para añadir funcionalidad a la página -->
+    <script src="script.js"></script>
+</body>
+</html>
