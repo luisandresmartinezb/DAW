@@ -11,14 +11,6 @@ Realiza una página web que permita gestionar tareas. Para ello la página web c
 
 > Cada vez que se completa una tarea pulsando el botón de la carta, desaparece de la lista filtrada y de la lista de cartas.
 
-## Imágenes de Prioridades
-
-Las imágenes de las tareas según su prioridad son las siguientes:
-
-- **Alta**: ![Alta](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4tANuBJoViapolNoVPmOHlaaFityDbdvSyyhUVpIL_MvB2K3IS6DNmUXkAtzhOPbbHRc&usqp=CAU)
-- **Media**: ![Media](https://static-00.iconduck.com/assets.00/medium-priority-icon-512x512-kpm2vacr.png)
-- **Baja**: ![Baja](https://static-00.iconduck.com/assets.00/high-priority-icon-1024x1024-ryazhwgn.png)
-
 ## Enunciado
 
 💡 Para poder realizar la práctica es necesario crear una clase donde se genera un objeto de tipo `Tarea`, con los atributos `id`, `titulo`, `descripción`, `fecha`, `prioritaria`, `prioridad`, `completa`, `imagen`.
@@ -58,6 +50,9 @@ git clone https://github.com/usuario/repositorio.git
 
 
 # Fotos de la aplicación
+![Texto alternativo](https://github.com/luisandresmartinezb/DAW/blob/main/Desarrollo%20web%20en%20entorno%20cliente/Tema%201%20-%20JavaScript/Gestion-Tareas/1.png)
+
+![Texto alternativo](https://github.com/luisandresmartinezb/DAW/blob/main/Desarrollo%20web%20en%20entorno%20cliente/Tema%201%20-%20JavaScript/Gestion-Tareas/2.png)
 
 
 
