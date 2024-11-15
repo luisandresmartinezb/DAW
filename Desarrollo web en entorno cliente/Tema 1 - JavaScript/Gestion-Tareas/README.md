@@ -44,7 +44,7 @@ La aplicación permite a los usuarios:
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
-git clone https://github.com/usuario/repositorio.git
+git clone 
 
 2. Este proyecto Tiene licencia MIT
 
