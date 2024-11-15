@@ -44,7 +44,7 @@ La aplicación permite a los usuarios:
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
-git clone 
+git clone ![Texto alternativo](https://github.com/luisandresmartinezb/DAW/blob/main/Desarrollo%20web%20en%20entorno%20cliente/Tema%201%20-%20JavaScript/Gestion-Tareas)
 
 2. Este proyecto Tiene licencia MIT
 
